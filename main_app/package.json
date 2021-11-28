@@ -16,7 +16,8 @@
     "core-js": "^3.9.1",
     "element-ui": "^2.13.2",
     "nuxt": "^2.15.3",
-    "qiankun": "^2.0.16"
+    "qiankun": "^2.0.16",
+    "tailwindcss": "^2.2.17"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
@@ -29,7 +30,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.7.0",
-    "postcss": "^8.2.8",
+    "postcss": "^8.3.11",
     "prettier": "^2.2.1"
   }
 }

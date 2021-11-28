@@ -1,9 +1,9 @@
 {
-  "name": "sub_1",
+  "name": "sub_2",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env PORT=7102 nuxt",
+    "dev": "cross-env PORT=7103 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",

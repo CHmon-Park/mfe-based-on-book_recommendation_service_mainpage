@@ -1,26 +1,18 @@
 <template>
-  <div id="container" class="h-screen">
-    <div class="text-center flex bg-pink-200" style="height: 25vh">
-      <nuxt-link to="/" class="my-auto mx-auto text-6xl font-bold"
-        >Main Page</nuxt-link
-      >
+  <div>
+    <header
+      class="flex border-gray-500 p-3 justify-between align-middle"
+      style="height: 8vh"
+    >
+      <div id="logo">logo</div>
+      <div id="login">login</div>
+    </header>
+    <div
+      class="w-screen bg-cover bg-center flex justify-center items-center"
+      style="background-image: url(main.png); height: 92vh"
+    >
+      <div id="searchbar" style="align-self: center"></div>
     </div>
-    <div class="flex" style="height: 25vh">
-      <div
-        v-for="app in apps"
-        :key="app.name"
-        class="w-1/3 flex opacity-50"
-        :id="app.name"
-      >
-        <nuxt-link
-          :to="app.activeRule"
-          class="my-auto mx-auto text-4xl text-white hover:text-black"
-          >{{ app.name }}</nuxt-link
-        >
-      </div>
-    </div>
-
-    <div id="default_subapp" class=""></div>
   </div>
 </template>
 
@@ -59,23 +51,4 @@ export default {
 </script>
 
 <style>
-#Red-App {
-  background-color: red;
-}
-#Blue-App {
-  background-color: blue;
-}
-#Green-App {
-  background-color: green;
-}
-#container {
-}
-#red_1,
-#red_2,
-#blue_1,
-#blue_2,
-#green_1,
-#green_2 {
-  height: 50vh;
-}
 </style>

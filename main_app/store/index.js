@@ -31,9 +31,9 @@ export const mutations = {
     }
 
     // 앱 목록 처리
-    apps = apps.map((item) => ({
+    apps = apps.map((item, i) => ({
       ...item,
-      container: '#default_subapp', // default.vue에서 subapp들이 들어갈 div의 id를 명시한 것.
+      container: '#' + item.name, // default.vue에서 subapp들이 들어갈 div의 id를 명시한 것.
       props: {
         sdk,
       },
@@ -74,18 +74,18 @@ function getMenus() {
     code: 0,
     payload: [
       {
-        name: 'Red-App',
-        activeRule: '/red',
-        entry: 'http://localhost:7102/',
+        name: 'logo',
+        activeRule: '',
+        entry: 'http://127.0.0.1:8000/',
       },
       {
-        name: 'Blue-App',
-        activeRule: '/blue',
+        name: 'login',
+        activeRule: '',
         entry: 'http://localhost:7103/',
       },
       {
-        name: 'Green-App',
-        activeRule: '/green',
+        name: 'searchbar',
+        activeRule: '',
         entry: 'http://localhost:7104/',
       },
     ],

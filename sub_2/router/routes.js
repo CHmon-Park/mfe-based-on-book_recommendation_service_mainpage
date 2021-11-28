@@ -1,4 +1,4 @@
-const BASE = window.__POWERED_BY_QIANKUN__ ? '/blue' : ''
+const BASE = window.__POWERED_BY_QIANKUN__ ? '' : ''
 
 function dynamicImport(path) {
   return import(`~/views/${path}/index.vue`).then((m) => m.default || m)
@@ -16,22 +16,12 @@ function dynamicImportRoute(routes) {
   }))
 }
 
-let routes = [
+const routes = [
   {
-    path: `${BASE}/home`,
-    name: 'Home',
-    component: 'home',
-  },
-  {
-    path: `${BASE}/blue_1`,
-    name: 'Blue_1',
-    component: 'blue_1',
+    path: `${BASE}/`,
+    name: 'searchbar',
+    component: 'searchbar',
     alias: `${BASE}`,
-  },
-  {
-    path: `${BASE}/blue_2`,
-    name: 'Blue_2',
-    component: 'blue_2',
   },
 ]
 
